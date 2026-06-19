@@ -3,5 +3,8 @@
   "description": "Uma ferramenta profissional para automatizar a geração de contratos de aluguel e compra de veículos através da extração inteligente de dados de documentos oficiais (CNH, CRLV e Comprovante de Residência) via Gemini AI.",
   "requestFramePermissions": [
     "camera"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
   ]
 }
