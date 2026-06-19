@@ -2,7 +2,7 @@ import { DocumentFile, ExtractedData } from "./types";
 
 export async function processDocuments(files: DocumentFile[]): Promise<ExtractedData> {
   try {
-    const response = await fetch("/api/process-documents", {
+    const response = await fetch("api.php", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

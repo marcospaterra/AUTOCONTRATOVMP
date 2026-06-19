@@ -36,7 +36,7 @@ async function startServer() {
   });
 
   // API endpoint for document processing with Gemini
-  app.post("/api/process-documents", async (req, res) => {
+  app.post(["/api/process-documents", "/api.php", "/geradordecontrato/api.php"], async (req, res) => {
     try {
       const { files } = req.body as { files: DocumentFile[] };
       if (!files || !Array.isArray(files) || files.length === 0) {
